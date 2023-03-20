@@ -7,12 +7,28 @@
 
 ## Development Process
 ### Getting Started with the Code
-- Run `python -m venv ./` to create a virtual environment in the root folder.
-- Run `source Scripts/activate` to activate (i.e. enter) the virtual environment
-- run pip install -r requirements.txt to install all dependencies locally (sth like `npm i` on package.json)
 
+Firstly, In the root directory of the project, run the following code:   
+```bash
+python -m venv ./
+```
+This creates a virtual environment folder called "venv" with the necessary script. (Don't worry, this dir is already mentioned in.gitignore and will be ignored by git)
 
+Next, run the following for **Mac**:
+```bash
+source env/bin/activate
+```
+OR this for **Windows**:"
+```bash
+env\Scripts\activate.bat
+```
+This activated (i.e. enters) the virtual environment.
 
+Finally, run the following:
+```bash
+pip install -r requirements.txt
+```
+This installs all dependencies locally as declared in the requirements.txt file (sth like `npm i` except that reads package.json automatically)
 
 
 ### Important Caveats!!!
