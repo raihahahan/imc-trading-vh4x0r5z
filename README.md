@@ -6,6 +6,15 @@
 - Island Simulation: https://prosperity.imc.com/leaderboard
 
 ## Development Process
+### Getting Started with the Code
+- Run `python -m venv ./` to create a virtual environment in the root folder.
+- Run `source Scripts/activate` to activate (i.e. enter) the virtual environment
+- run pip install -r requirements.txt to install all dependencies locally (sth like `npm i` on package.json)
+
+
+
+
+
 ### Important Caveats!!!
 - Ensure the `run` method in `Trade` class doesn't exceed 900ms or it will time out!
 - There is a position limit imposed on each product. Ensure any order made will not violate this, else the entire order will be rejected.
