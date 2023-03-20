@@ -10,17 +10,17 @@
 
 Firstly, In the root directory of the project, run the following code:   
 ```bash
-python -m venv ./
+virtualenv venv
 ```
 This creates a virtual environment folder called "venv" with the necessary script. (Don't worry, this dir is already mentioned in.gitignore and will be ignored by git)
 
 Next, run the following for **Mac**:
 ```bash
-source env/bin/activate
+source venv/bin/activate
 ```
 OR this for **Windows**:"
 ```bash
-env\Scripts\activate.bat
+venv\Scripts\activate
 ```
 This activated (i.e. enters) the virtual environment.
 
