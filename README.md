@@ -34,3 +34,19 @@ This installs all dependencies locally as declared in the requirements.txt file 
 ### Important Caveats!!!
 - Ensure the `run` method in `Trade` class doesn't exceed 900ms or it will time out!
 - There is a position limit imposed on each product. Ensure any order made will not violate this, else the entire order will be rejected.
+
+## Quick references
+### Trader class
+```py
+from typing import Dict, List
+from datamodel import OrderDepth, TradingState, Order
+
+class Trader:
+    def run(self, state: TradingState) -> Dict[str, List[Order]]:
+		"""
+		Takes all buy and sell orders for all symbols as an input,
+		and outputs a list of orders to be sent
+		"""
+        result = {}
+        return result
+```
