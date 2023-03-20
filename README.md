@@ -50,3 +50,8 @@ class Trader:
         result = {}
         return result
 ```
+
+## Some trading strategies
+- **Trend following strategy:** This strategy involves identifying the direction of the trend and taking positions in the same direction. For example, if product A has been consistently increasing in price, you could take a long position (buy order) for A, expecting the trend to continue. Conversely, if product A has been consistently decreasing in price, you could take a short position (sell order) for A, expecting the trend to continue.
+
+- **Mean reversion strategy:** This strategy involves taking positions in the opposite direction of the trend, assuming that prices will eventually revert to their mean. For example, if product A has experienced a sharp increase in price, you could take a short position for A, expecting the price to eventually come back down to its average. Conversely, if product A has experienced a sharp decrease in price, you could take a long position for A, expecting the price to eventually recover.
