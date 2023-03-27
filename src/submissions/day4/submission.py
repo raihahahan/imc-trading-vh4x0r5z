@@ -2,7 +2,7 @@ import pandas as pd
 
 from typing import Dict, List
 from datamodel import OrderDepth, TradingState, Order
-from simulator.tradingStateGenerator import *
+from ...simulator.tradingStateGenerator import *
 
 class Trader:
 
@@ -67,12 +67,3 @@ class Trader:
                 # These possibly contain buy or sell orders for PEARLS
                 # Depending on the logic above
         return result
-
-prices_file_path = "src\\day 1\\csv files\\prices_round_1_day_0.csv"
-trades_file_path = "src\\day 1\\csv files\\trades_round_1_day_0_nn.csv"
-tradingState = tradingStateGenerator(prices_file_path, trades_file_path)
-
-trader = Trader()
-result = trader.run(tradingState)
-
-print(result)
