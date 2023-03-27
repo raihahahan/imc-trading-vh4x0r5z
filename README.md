@@ -30,6 +30,8 @@ pip install -r requirements.txt
 ```
 This installs all dependencies locally as declared in the requirements.txt file (sth like `npm i` except that reads package.json automatically)
 
+## Simulations
+- Go to `src/simulator/simulator_instructions.md` to read on how to simulate the run algorithm against the given csv files.
 
 ### Important Caveats!!!
 - Ensure the `run` method in `Trade` class doesn't exceed 900ms or it will time out!
