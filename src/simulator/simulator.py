@@ -15,8 +15,8 @@ class Trader:
         return run(state)
  
 
-prices_file_path = "src\\day4\\data\\prices_round_4_day_1.csv"
-trades_file_path = "src\\day4\\data\\trades_round_4_day_1_nn.csv"
+prices_file_path = "src/submissions/day4/data/prices_round_4_day_1.csv"
+trades_file_path = "src/submissions/day4/data/trades_round_4_day_1_nn.csv"
 tradingState = tradingStateGenerator(prices_file_path, trades_file_path)
 
 trader = Trader()
