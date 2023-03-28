@@ -1,8 +1,5 @@
-import pandas as pd
-
 from typing import Dict, List
 from datamodel import OrderDepth, TradingState, Order
-from ...simulator.tradingStateGenerator import *
 
 class Trader:
 
@@ -28,7 +25,7 @@ class Trader:
 
                 # Define a fair value for the PEARLS.
                 # Note that this value of 1 is just a dummy value, you should likely change it!
-                acceptable_price = 123123
+                acceptable_price = 9999.983800
 
                 # If statement checks if there are any SELL orders in the PEARLS market
                 if len(order_depth.sell_orders) > 0:
