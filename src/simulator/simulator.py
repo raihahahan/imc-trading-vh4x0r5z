@@ -35,13 +35,9 @@ def run_simulation(num_test: int, prices_file_path: str, trades_file_path: str):
 
  
 ## Modify the file paths
-prices_files = ["src/submissions/day4/data/prices_round_4_day_1.csv", 
-                "src/submissions/day4/data/prices_round_4_day_2.csv",
-                "src/submissions/day4/data/prices_round_4_day_3.csv"]
+prices_files = ["src\submissions\day4\data\prices_round_4_day_1.csv", "src\submissions\day4\data\prices_round_4_day_2.csv", "src\submissions\day4\data\prices_round_4_day_3.csv" ]
 
-trades_files = ["src/submissions/day4/data/trades_round_4_day_1_nn.csv",
-                "src/submissions/day4/data/trades_round_4_day_2_nn.csv",
-                "src/submissions/day4/data/trades_round_4_day_3_nn.csv"]
+trades_files = ["src\submissions\day4\data\\trades_round_4_day_1_nn.csv", "src\submissions\day4\data\\trades_round_4_day_2_nn.csv", "src\submissions\day4\data\\trades_round_4_day_3_nn.csv"]
 
 combined_prices_csv_path = combine_csv_files(prices_files, "prices")
 combined_trades_csv_path = combine_csv_files(trades_files, "trades")  
